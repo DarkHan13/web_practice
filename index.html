@@ -1,0 +1,62 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title> WORK</title>
+    <link href="CSS/Style.css" rel="stylesheet" />
+
+</head>
+<body>
+    <div id="wrapper">
+        <div id="header">
+            <h2 class="YOUTH">YOUTH</h2>
+            <h4 class="nickname">nickname</h4>
+            <img class="circle" src="CSS/circle.png" alt="circle" />
+        </div>
+        <div id="sidebar">
+            <div class="BackButton">
+                
+            </div>
+            <button class="button_video" style="background-color: transparent;" onclick="clickVideo()"> <img alt="" src="CSS/videoButton.png" style="vertical-align:middle" /></button>
+            <script>
+                function clickVideo() {
+                    alert("Видео");
+                }
+            </script>
+            <button class="button_book" style="background-color: transparent;" onclick="clickBook()"> <img alt="" src="CSS/book.png" style="vertical-align:middle" /></button>
+            <script>
+                function clickBook() {
+                    alert("Книга");
+                }
+            </script>
+            <button class="button_music" style="background-color: transparent;" onclick="clickMusic()"> <img alt="" src="CSS/music.png" style="vertical-align:middle" /></button>
+            <script>
+                function clickMusic() {
+                    alert("Музыка");
+                }
+            </script>
+        </div>
+        <div class="foo">
+            <div class="bar">
+                <iframe width="865" height="441" src="https://www.youtube.com/embed/HJA92LQrsvw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+            </div>
+        </div>
+        <div id="footer">
+            <label class="custom-field">
+                <input type="email" placeholder="Enter the link to the video" />
+                <span class="placeholder">Enter the link to the video</span>
+            </label>
+            <input class="search" type="image" width="40px" height="40px" src="CSS/Search_Prism.png" alt="Кнопка «input»">
+        </div>
+        <div>
+            <label>
+                <textarea class="Textarea" rows="20" cols="90"></textarea>
+            </label>
+        </div>
+
+        
+    </div>
+
+</body>
+</html>
