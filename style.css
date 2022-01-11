@@ -1,0 +1,534 @@
+﻿/* fonts that will use */
+@import url('https://fonts.googleapis.com/css2?family=Andika&family=Dosis:wght@300&family=M+PLUS+Rounded+1c:wght@300;400&family=Rubik+Mono+One&family=Sirin+Stencil&family=Spartan&family=Text+Me+One&family=Titan+One&display=swap');
+   
+*{
+    margin: 0;
+    padding: 0;
+}
+/* the main page */
+
+
+.first{
+    margin-left: 240px;
+    margin-top: 100px;
+    display: flex;
+}
+    .slogan {
+        font-family: 'Titan One', sans-serif;
+        font-size: 80px;
+        font-weight: 400;
+        line-height: 91.6px;
+        letter-spacing: 0.15em;
+    }
+    .slogan2 {
+        font-family: 'Text Me One', sans-serif;
+        font-weight: 400;
+        font-size: 36px;
+        line-height: 36.63px;
+        letter-spacing: 0.1em;
+        margin-top: 50px;
+    }
+    .main-btn {
+        height: 90px;
+        width: 321px;
+        margin-top: 100px;
+        margin-bottom: 400px;
+        background: #228AE9;
+        border-radius: 30px;
+        display: flex;
+    }
+        .main-btn-link {
+            font-family: 'Andika', sans-serif;
+            font-weight: 400;
+            font-size: 30px;
+            color: white;
+            line-height: 48.34px;
+            letter-spacing: 0.1em;
+            text-decoration: none;
+            margin-top: 20px;
+            margin-left: 42px;
+        }
+.content-of-the-main-page{
+    margin-left: 100px;
+}
+    .content-line {
+        display: flex;
+        align-items: safe center;
+        margin-bottom: 400px;
+
+    }
+        .img-main {
+            margin-left: 108px;
+        }
+        .background-of-icons {
+            width: 220px;
+            height: 220px;
+            border-radius: 100%;
+            }
+            .icons {
+                height: 151.58px;
+                width: 135px;
+                position: absolute;
+                margin-left: -175px;
+                margin-top: 30px;
+                margin-right: 612px;
+            }
+            .promotion {
+                font-family: Spartan;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 27px;
+                line-height: 30px;
+                letter-spacing: 0.1em;
+                color: #000000;
+                margin-left: 612px;
+
+        }
+        .background-of-icons2 {
+            width: 220px;
+            height: 220px;
+            margin-left: 148px;
+            border-radius: 100%;
+            }
+            .icons2 {
+                height: 151.58px;
+                width: 135px;
+                position: absolute;
+                margin-top: 35px;
+                margin-left: -183px;
+            }
+            .promotion2 {
+                margin-left: 148px;
+                margin-right: 350px;
+        }
+.signUp2{
+    margin-bottom: 80px;
+    margin-left: 450px;
+
+}
+.main-btn-link2 {
+    font-family: 'Andika', sans-serif;
+    font-weight: 400;
+    font-size: 30px;
+    color: white;
+    line-height: 48.34px;
+    letter-spacing: 0.1em;
+    text-decoration: none;
+    margin-top: 20px;
+    margin-left: 85px;
+}
+hr {
+    background-color: #A6D1F8;
+    margin-bottom: 5px;
+}
+.under {
+    width: 100%;
+    height: 200px;
+    background: #404147;
+    
+}
+.under-text {
+    font-family: Spartan;
+    font-size: 23px;
+    line-height: 26px;
+    letter-spacing: 0.1em;
+    color: #FFFFFF;
+    margin-left: 200px;
+    display: flex;
+}
+.second-under{
+    margin-left: 400px;
+}
+.topic-under {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.under-links {
+    color: white;
+    text-decoration: none;
+}
+/* registration form */
+#registration-page {
+    background-color: #CFF8FD;
+    width: 1535px;
+    height: 720px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+    .circle {
+        width: 500px;
+        height: 500px;
+        background: #E8FDFF;
+        border-radius: 100%;
+        position:absolute;
+    }
+    .registerForm-container {
+        opacity: 0;
+        animation-name: fadeForm;
+        animation-duration: 0.3s;
+        animation-timing-function: ease-in-out;
+        animation-delay: 0s;
+        animation-iteration-count: 1;
+        animation-fill-mode: forwards;
+
+        position: relative;
+        width: 330px;
+        height: 520px;
+        background: #FFFFFF;
+        border-radius: 37px;
+        padding-left: 47px;
+        padding-top: 36px;
+        padding-right: 47px;
+        box-shadow: 10px 10px 10px 1px rgba(165, 245, 255, 0.27);
+    }
+    @keyframes fadeForm{
+        0% {
+            opacity: 0;
+        }
+        55% {
+            opacity: 0.55;
+        }
+        85% {
+            opacity: 0.95;
+        }
+        100% {
+            opacity: 1;
+        }
+    }
+        .form-title {
+            font-family: 'M PLUS Rounded 1c', sans-serif;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 30px;
+            line-height: 45px;
+            letter-spacing: 0.1em;
+            color: #01665A;
+            margin-bottom: 5px;
+        }
+
+        #registration-page input {
+            font-family: 'M PLUS Rounded 1c', sans-serif;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 20px;
+            line-height: 30px;
+            letter-spacing: 0.1em;
+            color: #6A7474;
+            width: 320px;
+            height: 48.88px;
+            background: #FFFFFF;
+            border: 1.5px solid #91DBE4;
+            box-sizing: border-box;
+            border-radius: 10px;
+            padding-left: 21px;
+            margin-top: 14px;
+        }  
+            #registration-page input:focus {
+                outline: none;
+                border: 2px solid #27B1C1;
+            }
+        .registerForm-signUp {
+            width: 320px;
+            height: 53px;
+            background: #00BCA6;
+            border-radius: 10px;
+            font-family: 'M PLUS Rounded 1c', sans-serif;
+            font-style: normal;
+            font-weight: 800;
+            font-size: 22px;
+            line-height: 26px;
+            letter-spacing: 0.2em;
+            color: #FFFFFF;
+            border: none;
+            margin-top: 25px;
+        }
+            .registerForm-signUp:hover{
+                background: #059c8a;
+            }
+        .registerForm-OR {
+            font-family: 'M PLUS Rounded 1c', sans-serif;
+            font-style: normal;
+            font-weight: 300;
+            font-size: 18px;
+            line-height: 27px;
+            letter-spacing: 0.1em;
+            color: #2D2929;
+            margin-top: 7px;
+            text-align: center;
+        }
+        .registerForm-signIn {
+            width: 320px;
+            height: 53px;
+            background: #CDEDE9;
+            border-radius: 10px;
+            font-family: 'M PLUS Rounded 1c', sans-serif;
+            font-style: normal;
+            font-weight: 300;
+            font-size: 17px;
+            line-height: 25px;
+            letter-spacing: 0.2em;
+            color: #222020;
+            border: none;
+            margin-top: 7px;
+        }
+            .registerForm-signIn:hover {
+                background: #C3E4E1;
+            }
+
+/* tasks page */
+
+#background {
+    background-repeat: no-repeat;
+    transform: matrix(-1, 0, 0, 1, 0, 0);
+    width: 1580px;
+    height: 678px;
+    position:  fixed;
+}
+
+nav{
+    height: 50px;
+    width: 1320px;
+    display: flex;
+    background: white;
+    padding-top: 14px;
+    padding-left: 150px;
+}
+nav a {
+    color: black;
+    text-decoration: none;
+}
+    nav h1 {
+        font-family: 'Rubik Mono One', sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 25px;
+        line-height: 31px;
+        letter-spacing: 0.05em;
+        color: #000000;
+    }
+    .links-to-pages {
+        top: calc(50% - 33px/2 - 319.5px);
+        font-family: 'M PLUS Rounded 1c', sans-serif;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 22px;
+        line-height: 33px;
+        margin-left: 81px;
+        text-align: right;
+        letter-spacing: 0.1em;
+        color: #000000;
+        text-decoration: none;
+    }
+    #signUp {
+        margin-left: 750px;
+        margin-bottom: 15px;
+        background-color: #43A5FF;
+        border-radius: 35px;
+        padding-top: 7px;
+        padding-right: 15px;
+    }
+        #signUp:hover {
+            background-color: #2994f7;
+        }
+        #signUp a {
+            text-decoration: none;
+            font-size: 18px;
+            color: white;
+            margin-left: 15px;
+        }
+
+#content-of-the-tasks-page {
+    display: flex;
+}
+
+.to-do-list-container {
+    height: 541px;
+    width: 442px;
+    position: absolute;
+    left: 150px;
+    top: 109px;
+    border-radius: 30px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    background: #FFFFFF;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 25px;
+    line-height: 37px;
+    letter-spacing: 0.1em;
+    color: #000000;
+}
+    .tasks {
+        height: 420px;
+        width: 360px;
+        position: relative;
+        margin-top: 27px;
+        margin-left: 30px;
+
+    }
+    .new-task {
+        margin-left: 49px;
+        margin-top: 15px;
+        display: flex;
+    }
+        .new-task input {
+            height: 27px;
+            width: 290px;
+            border-radius: 30px;
+            border: none;
+            padding-top: 11.5px;
+            padding-bottom: 11.5px;
+            padding-left: 30px;
+            outline: none;
+            background: #F0EFEF;
+            font-family: 'M PLUS Rounded 1c', sans-serif;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 18px;
+            letter-spacing: 0.1em;
+            color: #4E4E4E;
+        }
+        #add-task-arrow {
+            height: 35px;
+            width: 35px;
+            background: none;
+            border: none;
+            cursor: pointer;
+            margin-top: 7.7px;
+            margin-left: -14px;
+        }
+            #arrow {
+                height: 30px;
+                width: 30px;
+                transform: matrix(-1, 0, 0, 1, 0, 0);
+            }
+
+
+
+.for-timer {
+    position: relative;
+    width: 323px;
+    height: 166px;
+    margin-left: 800px;
+    margin-top: 154px;
+}
+    #countdown {
+        width: 323px;
+        height: 85px;
+        font-family: 'Sirin Stencil', cursive;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 100px;
+        line-height: 35px;
+        text-align: center;
+        letter-spacing: 0.05em;
+        color: #000000;
+    }
+    #button-for-timer {
+        width: 156px;
+        height: 50px;
+        background: #43A5FF;
+        border-radius: 8px;
+        border: none;
+        margin-top: 31px;
+        margin-left: 83.5px;
+        font-family: 'M PLUS Rounded 1c', sans-serif;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 25px;
+        line-height: 37px;
+        text-align: center;
+        letter-spacing: 0.1em;
+        color: #FFFFFF;
+    }
+            #button-for-timer:hover {
+                background: #2994f7;
+            }
+
+
+
+.for-music {
+    position: absolute;
+    width: 384px;
+    height: 105px;
+    margin-top: 412px;
+    margin-left: 757.5px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+}
+    .navigation-mucic{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 1;
+        margin-left: -32px;
+    }
+    .action-btn-music{
+        margin-left: 32px;
+        background: none;
+        border: none;
+        cursor: pointer;
+    }
+#title-of-song {
+    width: 384px;
+    height: 31px;
+    font-family: Dosis;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 25px;
+    line-height: 31px;
+    letter-spacing: 0.05em;
+    color: #FF1A50;
+    text-align: center;
+    margin-bottom: 10px;
+}
+.progress-container {
+    width: 384px;
+    height: 6px;
+    background: #FFFFFF;
+    box-shadow: inset 2px 2px 4px #FFC4D0;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    cursor: pointer;
+}
+.progress {
+    width: 50%;
+    height: 100%;
+    background: #FFFFFF;
+    box-shadow: inset 0px 15px 4px rgba(255, 143, 170, 0.25), inset -2px 0px 5px #FF8FAA;
+    border-radius: 5px;
+    transition: width 0.1s linear;
+}
+
+
+
+
+.for-nav {
+    position: relative;
+    width: 46.5px;
+    height: 322px;
+    padding-top: 101px;
+    margin-left: 193px;
+    margin-top: 101px;
+}
+    .nav-pages-vectors {
+        margin-top: -53.5px;
+    }
+    .icons-for-nav {
+        margin-top: -330px;
+        position: absolute;
+    }
+        .icons-for-nav-buttons {
+            width: 28px;
+            margin-top: 64px;
+            margin-left: 8px;
+        }
+
+
+/* video page */
+
+/* book page */
