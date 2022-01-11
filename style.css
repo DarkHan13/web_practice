@@ -6,7 +6,9 @@
     padding: 0;
 }
 /* the main page */
-
+a {
+text-decoration: none;
+}
 .first-2{
     float: right;
     position: absolute;
