@@ -1,62 +1,120 @@
-﻿<!DOCTYPE html>
-<html>
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="utf-8" />
-    <title> WORK</title>
-    <link href="CSS/Style.css" rel="stylesheet" />
+    <title>WEB</title>
+    <link rel="shortcut icon" type="image/svg" href="svg/book_2.svg" />
+
+    <link rel="stylesheet" href="path/to/atropos.css" />
+    <link rel="stylesheet" href="style.css" type="text/css" />
 
 </head>
 <body>
-    <div id="wrapper">
-        <div id="header">
-            <h2 class="YOUTH"><a href="index.html">YOUTH</a></h2>
-            <h4 class="nickname">nickname</h4>
-            <img class="circle" src="CSS/circle.png" alt="circle" />
+    <nav>
+        <h1><a href="index.html"><strong>YOUTH</strong></a></h1>
+        <a href="index.html" class="links-to-pages">home</a>   <!-- the home page -->
+        <!--
+    <a href="#" class="links-to-pages">tips</a>     <!-- the page with helpful tips to use this website -->
+        <div id="signUp">
+            <a href="registration.html">SIGN UP</a>  <!-- sign up/sign in button -->
         </div>
-        <div id="sidebar">
-            <div class="BackButton">
-                
+    </nav>
+    <main>
+        <div class="first"> <!-- first part of the main page-->
+            <div class="first-1">
+                <h1 class="slogan">
+                    stay & <br />study
+                </h1>
+                <p class="slogan2">
+                    everything that you need<br />
+                    while you are studying
+                </p>
+                <div class="main-btn">
+                    <a href="task.html" class="main-btn-link">STUDY MODE</a>
+                </div>
             </div>
-            <button class="button_video" style="background-color: transparent;" onclick="clickVideo()"> <img alt="" src="CSS/videoButton.png" style="vertical-align:middle" /></button>
-            <script>
-                function clickVideo() {
-                    alert("Видео");
-                }
-            </script>
-            <button class="button_book" style="background-color: transparent;" onclick="clickBook()"> <img alt="" src="CSS/book.png" style="vertical-align:middle" /></button>
-            <script>
-                function clickBook() {
-                    alert("Книга");
-                }
-            </script>
-            <button class="button_music" style="background-color: transparent;" onclick="clickMusic()"> <img alt="" src="CSS/music.png" style="vertical-align:middle" /></button>
-            <script>
-                function clickMusic() {
-                    alert("Музыка");
-                }
-            </script>
-        </div>
-        <div class="foo">
-            <div class="bar">
-                <iframe width="865" height="441" src="https://www.youtube.com/embed/HJA92LQrsvw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
+            <div class="first-2">
+                <img src="#" class="watercolor1"/>
             </div>
         </div>
-        <div id="footer">
-            <label class="custom-field">
-                <input type="email" placeholder="Enter the link to the video" />
-                <span class="placeholder">Enter the link to the video</span>
-            </label>
-            <input class="search" type="image" width="40px" height="40px" src="CSS/Search_Prism.png" alt="Кнопка «input»">
-        </div>
-        <div>
-            <label>
-                <textarea class="Textarea" rows="20" cols="90"></textarea>
-            </label>
-        </div>
+        <div class="content-of-the-main-page">
 
-        
-    </div>
+            <div class="content-line">
+                <div class="img-main">
+                    <a href="reader.html">
+                        <img class="background-of-icons" src="img/background.png" />
+                        <img class="icons" src="svg/BOOK.svg" />
+                    </a>
+                </div>
+                <ul class="promotion">
+                    <li>use PDF reader</li>
+                    <li>study on one place</li>
+                </ul>
+            </div>
 
+            <div class="content-line">
+                <p class="promotion promotion2" style="text-align: center; margin-left: 95px;">
+                    watch lesson <br />
+                    from YouTube <br />
+                    <strong>without</strong> <br />
+                    distracting content
+                </p>
+                <div class="img-main">
+                    <a href="video.html">
+                        <img class="background-of-icons2" src="img/background.png" />
+                        <img class="icons2" src="svg/VIDEO.svg" />
+                    </a>
+                </div>
+            </div>
+            <div class="content-line">
+                <div class="img-main">
+                    <a href="task.html">
+                        <img class="background-of-icons" src="img/background.png" />
+                        <img class="icons" src="svg/CLOCK.svg" 
+                    </a>
+                </div>
+                <ul class="promotion">
+                    <li>use timer</li>
+                    <li>write your tasks</li>
+                    <li>work <em>productively</em></li>
+                </ul>
+            </div>
+            <div class="content-line">
+                <ul class="promotion promotion2">
+                    <li>classic music</li>
+                    <li>lo-fi music</li>
+                    <li>ect</li>
+                </ul>
+                <div class="img-main">
+                    <a href="task.html">
+                        <img class="background-of-icons2" src="img/background.png" />
+                        <img class="icons2" src="svg/MUSIC.svg" />
+                    </a>
+                </div>
+            </div>
+            <div class="main-btn signUp2">
+                <a class="main-btn-link2" href="task.html">SIGN UP</a>
+            </div>
+            
+        </div>
+        <hr />
+        <div class="under">
+            <div class="under-text">
+                <div class="first-under">
+                    <p class="topic-under">About Us</p>
+                    <p class="#">bla bla bla</p>
+                </div>
+                <div class="second-under">
+                    <p class="topic-under">Contact Us</p>
+                    <ol>
+                        <li><a class="under-links" href="#">telegram</a></li>
+                        <li><a class="under-links" href="#">instagram</a></li>
+                        <li><a class="under-links" href="#">VK</a></li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </main>
 </body>
 </html>
