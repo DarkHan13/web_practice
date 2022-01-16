@@ -1,14 +1,4 @@
-﻿
-#header {
-    background: white;
-    height: 50px;
-    width: 100%
-}
-
-* {
-    margin: 0;
-    padding: 0;
-}
+﻿@import url('https://fonts.googleapis.com/css2?family=Andika&family=Dosis:wght@300&family=M+PLUS+Rounded+1c:wght@300;400&family=Rubik+Mono+One&family=Sirin+Stencil&family=Spartan&family=Text+Me+One&family=Titan+One&display=swap');
 
 body {
     background-image: url(background.png);
@@ -21,43 +11,10 @@ body {
     background-size: cover;
 }
 
-.YOUTH {
-    max-width: 1px;
-    position: relative;
-    bottom: -15px;
-    right: -8%;
-    @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@900&display=swap');
-    font-family: 'Rubik', sans-serif;
-}
 
-#header a {
-    color: black;
-    text-decoration:none;
-}
 
-.nickname {
-    max-width: 1px;
-    @import url('https://fonts.googleapis.com/css2?family=Angkor&display=swap');
-    position: relative;
-    bottom: 7px;
-    right: -85%;
-    font-family: 'Angkor', cursive;
-}
 
-.circle {
-    position: relative;
-    bottom: 35px;
-    right: -90%;
-    width: 30px;
-    height: 30px;
-}
-
-.video {
-    position: relative;
-    left: 300px;
-    bottom: -100px;
-}
-
+/*
 .foo {
     width: 904px;
     height: 490px;
@@ -87,7 +44,7 @@ body {
     bottom: -50px;
     border-top: 20px solid transparent;
 }
-
+    */
 
 /*
     Стиль поля input в основном предназначен для его сброса, например удаления внешнего вида и границы.
@@ -114,7 +71,7 @@ body {
         bottom: 50%;
         top: 22px;
         transform: translateY(-50%);
-        color: #aaa;
+        color: black;
         overflow: hidden;
         white-space: nowrap;
         text-overflow: ellipsis;
@@ -133,35 +90,144 @@ body {
     left: 320px;
     top: 66px;
 }
-
+/*
 .Textarea {
     position: relative;
     top: 90px;
-    left: 255px;
+    left: 240px;
     border-radius: 10px;
     margin-bottom: 200px;
     padding: 100px;
 }
+    */
 
-.button_video {
+
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
+
+
+button {
+    cursor: pointer;
+    padding: 2px 5px;
+    color: #ccc;
+    background: transparent;
     border: none;
+    outline: none;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    background-color: #171717;
+}
+
+main {
+    width: 100%;
+    min-height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+    main h3 {
+        text-align: center;
+        width: 100%;
+        word-spacing: 0.5rem;
+        font-size: 2rem;
+        color: #bbbbbb;
+    }
+
+.pdf-viewer {
+    background-color: #333;
+    background-color: #fff;
+    margin: auto;
+}
+
+.hidden {
+    display: none;
+}
+
+footer {
+    position: sticky;
+    bottom: 0;
+    height: 10vh;
+    background-color: #000000;
+}
+
+.pagination {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    color: #eee;
+    font-size: 1.4rem;
+}
+
+    .pagination span {
+        font-size: 1.1rem;
+        margin: 0 10px;
+    }
+
+    .pagination button {
+        font-size: 1.5rem;
+    }
+
+button:active > * {
+    color: #8d8d8d;
+}
+
+footer ul {
+    list-style-type: none;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     position: relative;
-    left: 1200px;
-    top: 300px;
+}
+
+    footer ul li:first-child {
+        margin-left: 20px;
+    }
+
+    footer ul li:last-child {
+        margin-right: 20px;
+    }
+
+#zoomValue {
+    display: inline-block;
+    font-size: 0.9rem;
+    width: 60px;
+    vertical-align: center;
+}
+
+#openPDF {
+    font-size: 1.2rem;
+    padding: 2px 5px;
+    font-weight: 700;
+    color: #eee;
+}
+
+
+
+
+
+
+
+.picture{
     
 }
 
-.button_book {
-    border: none;
-    position: relative;
-    left: 1171px;
-    top: 274px;
-}
 
-.button_music {
-    border: none;
-    position: relative;
-    left: 1138px;
-    top: 248px;
-}
+
+/*
+All bootstrap's classes:
+*/
+
+.navbar-nav li {
+    padding-right: 40px;
+} 
+
+.nav-link { font-size: 1.1em !important}
 
