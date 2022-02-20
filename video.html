@@ -14,13 +14,14 @@
             integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
             crossorigin="anonymous">
     </script>
+    <script src ="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
 </head>
 <body>
     
     <div id="wrapper">
         <div id="header" style="margin-bottom: 200px;">
-            <nav class="navbar navbar-expand-md navbar-light bg-light bg-white sticky-top">
+            <nav class="navbar navbar-expand-md navbar-light bg-light bg-white ">
                 <div class="container">
                     <strong style="font-family: 'Titan One', sans-serif; font-size: x-large; letter-spacing: 5px;">YOUTH</strong>
                     <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarResponsive">
@@ -52,10 +53,15 @@
 
         </div>
         <div class="container ">
+            <blockquote class="blockquote">
+                <p id="titleOfVideo" style="text-align:center; font-size: 200%; background-color: white ;color: black ">js doesn't work</p>
+            </blockquote>
             <div class="ratio ratio-16x9" style="margin-bottom: 20px; ">
 
-                <iframe src="https://www.youtube.com/embed/vlDzYIIOYmM"
+                <iframe id="curVid"
+                        src="https://www.youtube.com/embed/vlDzYIIOYmM"
                         title="YouTube video"
+                        allow="accelerometer" ;
                         allowfullscreen>
                 </iframe>
             </div>
@@ -72,11 +78,11 @@
                                 </div>
                                 <!--end of col-->
                                 <div class="col">
-                                    <input class="form-control form-control-lg form-control-borderless" type="search" placeholder="Enter a link to the video">
+                                    <input id="searchVideo" class="form-control form-control-lg" type="text" placeholder="Enter a name of video" value="">
                                 </div>
                                 <!--end of col-->
                                 <div class="col-auto">
-                                    <button class="btn btn-lg btn-success" type="submit">Search</button>
+                                    <button id="bsl" class="btn btn-lg btn-success" type="button" >Search</button>
                                 </div>
                                 <!--end of col-->
                             </div>
@@ -86,16 +92,23 @@
 
                 </div>
             </div>
-            <div class="container" >
+            <div class="container">
                 <label>
                     <div class="form-outline">
                         <textarea class="form-control" id="textAreaExample2" rows="20" cols="180"></textarea>
                         <label class="form-label" for="textAreaExample2">Message</label>
                     </div>
                 </label>
+                <div class="container">
+
+                    <input id="nameOfVideo" class="form-control form-control-lg " type="text" value="" placeholder="name of video" />
+                    <input id="linkOfVideo" class="form-control form-control-lg " type="text" value="" placeholder="link to the video" />
+                    <button id="submit" class="btn btn-lg btn-success" type="button">Submit</button>
+                </div>
             </div>
             <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
         </div>
-    </div>     
+    </div>
+    <script src="VideoJS.js"></script>
 </body>
 </html>
