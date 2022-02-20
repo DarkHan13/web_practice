@@ -14,43 +14,6 @@ body {
 
 
 
-/*
-.foo {
-    width: 904px;
-    height: 490px;
-    background: url('video.png') no-repeat;
-    position: relative;
-    left: 250px;
-    top: 10px;
-}
-
-    .foo .bar {
-        background: #fdd;
-        height: 220px;
-        width: 310px;
-        position: absolute;
-        left: 20px;
-        top: 25px;
-    }
-
-*, *::before, *::after {
-    box-sizing: border-box;
-}
-
-.custom-field {
-    font-size: 14px;
-    position: relative;
-    right: -320px;
-    bottom: -50px;
-    border-top: 20px solid transparent;
-}
-    */
-
-/*
-    Стиль поля input в основном предназначен для его сброса, например удаления внешнего вида и границы.
-    Обратите внимание, что ширина input определяет размер элемента custom-field, и еще одна важная деталь — 
-    это отступы, которые нам нужно будет сопоставить при размещении элемента placeholder.
-*/
 
 .custom-field input {
     border: none;
@@ -90,18 +53,6 @@ body {
     left: 320px;
     top: 66px;
 }
-/*
-.Textarea {
-    position: relative;
-    top: 90px;
-    left: 240px;
-    border-radius: 10px;
-    margin-bottom: 200px;
-    padding: 100px;
-}
-    */
-
-
 
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
 
@@ -214,10 +165,6 @@ footer ul {
 
 
 
-
-.picture{
-    
-}
 
 
 

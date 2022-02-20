@@ -1,104 +1,4 @@
-﻿/*const zoomButton = document.getElementById('zoom');
-const input = document.getElementById('inutFile');
-const openFile = document.getElementById('openPDF');
-const currentPage = document.getElementById('current_page');
-const viewer = document.querySelector('.pdf-viewer');
-let currentPDF = {};
-
-
-
-function resetCurrentPDF() {
-    currentPDF = {
-        file: null,
-        countOfPages: 0,
-        currentPage: 1,
-        zoom: 1.5
-    };
-}
-
-openPDF.addEventListener('click', () => {
-    input.click();
-});
-
-
-document.getElementById('next').addEventListener('click', () => {
-    const isValidPage = currentPDF.currentPage < currentPdf.countOfPages;
-    if (isValidPage) {
-        currentPDF.currentPage += 1;
-        rendererCurrentPage();
-    }
-});
-
-zoomButton.addEventListener('input', () => {
-    if (currentPDF.file) {
-        document.getElementById('zoomValue').innerHTML = zoomButton.value + "%";
-        currentPDF.zoom = parseInt(zoomButton.value) / 100;
-        rendererCurrentPage();
-    }
-});
-
-
-document.getElementById('previous').addEventListener('click', () => {
-    const isValidPage = currentPDF.currentPage - 1 > 0 ;
-    if (isValidPage) {
-        currentPDF.currentPage -= 1;
-        rendererCurrentPage();
-    }
-});
-
-
-input.addEventListener('change', event => {
-    const inputFile = event.target.files[0];
-    if (inputFile.type == 'application/pdf') {
-        const reader = new FileReader();
-        reader.readAsDataURL(inputFile);
-        reader.onload = () => {
-            loadPDF(reader.result);
-            zoomButton.disabled = false;
-        };
-    }
-    else {
-        alert('The file you selected is not a PDF file!');
-    }
-});
-
-function loadPDf(data) {
-    resetCurrentPDF();
-    const pdfFile = pdfjsLib.getDocument(data);
-    pdfFile.promise.then(doc => {
-        currentPDF.file = doc;
-        currentPDF.countOfPages = doc.numPages;
-        viewer.classList.remove('hidden');
-        document.querySelector('main h3').classList.add('hidden');
-        renderCurrentPage();
-    });
-}
-
-
-function rendererCurrentPage() {
-    currentPDF.file.getPage(currentPDF.currentPage).then(page => {
-        const context = viewer.getContext('2d');
-        const viewPort = page.getViewport({ scale: currentPDF.zoom });
-        viewer.height = viewPort.height;
-        viewer.width = viewPort.width;
-
-        const renderContext = {
-            canvasContext: context,
-            viewPort: viewPort
-        };
-        page.render(renderContext);
-    });
-    currentPage.innerHTML = currentPDF.currentPage = " of " + currentPDF.countOfPages;
-
-}
-
-
-
-
-
-*/
-
-const zoomButton = document.getElementById('zoom');
+﻿const zoomButton = document.getElementById('zoom');
 const input = document.getElementById('inputFile');
 const openFile = document.getElementById('openPDF');
 const currentPage = document.getElementById('current_page');
@@ -130,7 +30,7 @@ input.addEventListener('change', event => {
         }
     }
     else {
-        alert("The file you are trying to open is not a pdf file!")
+        alert("The file you are trying to open is not a pdf file!");
     }
 });
 
