@@ -3,13 +3,20 @@ const inputName = document.getElementById("nameOfVideo");
 const inputLink = document.getElementById("linkOfVideo");
 const searchButtonLink = document.getElementById("bsl");
 const submitButtonLink = document.getElementById("submit");
+const deleteButton = document.getElementById("delete");
 let curVid = document.getElementById("curVid");
 let titleOfVideo = document.getElementById("titleOfVideo");
+
 
 const check = "https://www.youtube.com/embed/";
 
 searchButtonLink.onclick = f;
 submitButtonLink.onclick = update;
+deleteButton.onclick = deleteAllData;
+
+function deleteAllData() {
+	localStorage.clear();
+}
 
 
 $(".col input").on("keypress", function (event) {
@@ -33,12 +40,22 @@ specialWords[2] = "жанторе";
 specialWords[3] = "c++ не читает кириллицу с файла!";
 
 titleOfVideo.innerHTML = specialWords[0];
-
-specialWords = JSON.parse(localStorage.getItem('sw'));
-for (var n = 0; n < specialWords.length; n++) {
-	links[specialWords[n]] = localStorage.getItem(specialWords[n]);
-	console.log(specialWords[n]);
+if (localStorage.getItem('sw') !== null) {
+	specialWords = JSON.parse(localStorage.getItem('sw'));
+	for (var n = 0; n < specialWords.length; n++) {
+		links[specialWords[n]] = localStorage.getItem(specialWords[n]);
+		console.log(specialWords[n]);
+	}
+}	
+else {
+	localStorage.getItem('sw', JSON.stringify(specialWords));
+	for (let n = 0; n < specialWords.length; n++) {
+		localStorage.setItem(specialWords[n], links[specialWords[n]]);
+	}
 }
+
+
+
 
 
 function isItExist(s){
@@ -67,7 +84,7 @@ function transforomToYoutube(s) {
 
 function update() {
 	inputName.value = inputName.value.toLowerCase();
-	if (inputLink.value.indexOf(".be/") != -1) {
+	if (inputLink.value.indexOf(".be/") !== -1) {
 		inputLink.value =  transforomToYoutube(inputLink.value);
     }
 	if (inputName.value != null && inputName.value != "" && !isItExist(inputName.value) && inputLink.value.indexOf(check) != -1) {
@@ -88,7 +105,6 @@ function update() {
 		localStorage.setItem(specialWords[n], links[specialWords[n]]);
 	}
 }
-
 
 
 
