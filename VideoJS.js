@@ -44,7 +44,7 @@ if (localStorage.getItem('sw') !== null) {
 	specialWords = JSON.parse(localStorage.getItem('sw'));
 	for (var n = 0; n < specialWords.length; n++) {
 		links[specialWords[n]] = localStorage.getItem(specialWords[n]);
-		console.log(specialWords[n]);
+		
 	}
 }	
 else {
@@ -74,7 +74,6 @@ function transforomToYoutube(s) {
     for (let n = index; n < s.length; n++) {
 		result += s[n];
 	}
-	alert(result);
 	return result;
 
 }
@@ -117,7 +116,6 @@ function f() {
 }
 
 	
-alert("js on");
 
 
 
@@ -137,7 +135,6 @@ function lenghtOfLevenstein(req) {
 		if (max < current) {
 			max = current;
 			index = i;
-			console.log(specialWords[index] + " = " + current);
 		}
 		current = 0;
 	}
