@@ -14,7 +14,6 @@ body {
 
 
 
-
 .custom-field input {
     border: none;
     -webkit-appearance: none;
@@ -162,16 +161,16 @@ footer ul {
 
 
 
-
-
-
-
-
-
+.playList {
+    visibility: hidden;
+    resize: none;
+    height: 0;
+    width: 100%;
+    margin-bottom: 50px;
+}
 /*
 All bootstrap's classes:
 */
-
 .navbar-nav li {
     padding-right: 40px;
 } 

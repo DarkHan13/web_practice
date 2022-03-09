@@ -18,7 +18,7 @@
 
 </head>
 <body>
-    
+
     <div id="wrapper">
         <div id="header" style="margin-bottom: 200px;">
             <nav class="navbar navbar-expand-md navbar-light bg-light bg-white ">
@@ -66,7 +66,8 @@
                 </iframe>
             </div>
         </div>
-        <div id="footer">
+
+        <div id="footer" style="display: block">
             <div class="container-fluid">
                 <br />
                 <div class="row justify-content-center" style="margin-bottom: 30px">
@@ -82,7 +83,7 @@
                                 </div>
                                 <!--end of col-->
                                 <div class="col-auto">
-                                    <button id="bsl" class="btn btn-lg btn-success" type="button" >Search</button>
+                                    <button id="bsl" class="btn btn-lg btn-success" type="button">Search</button>
                                 </div>
                                 <!--end of col-->
                             </div>
@@ -99,17 +100,21 @@
                         <label class="form-label" for="textAreaExample2">Message</label>
                     </div>
                 </label>
-                <div class="container">
+                <div class="container" style="margin-bottom: 20px">
 
                     <input id="nameOfVideo" class="form-control form-control-lg " type="text" value="" placeholder="name of video" />
                     <input id="linkOfVideo" class="form-control form-control-lg " type="text" value="" placeholder="link to the video" />
                     <button id="submit" class="btn btn-lg btn-success" type="button">Submit</button>
                     <button id="delete" class="btn btn-lg btn-danger" type="button">Delete</button>
+                    <button id="showAll" class="btn btn-lg btn-primary" type="button">Show</button>
                 </div>
+                <textarea id="playList" class="playList" readonly></textarea>
             </div>
             <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
         </div>
+              
     </div>
+
     <script src="VideoJS.js"></script>
 </body>
 </html>

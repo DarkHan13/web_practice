@@ -4,17 +4,56 @@ const inputLink = document.getElementById("linkOfVideo");
 const searchButtonLink = document.getElementById("bsl");
 const submitButtonLink = document.getElementById("submit");
 const deleteButton = document.getElementById("delete");
+const showAllButton = document.getElementById("showAll");
 let curVid = document.getElementById("curVid");
 let titleOfVideo = document.getElementById("titleOfVideo");
-
+let footer = document.getElementById("wrapper");
+let playlist = document.getElementById('playList');
 
 const check = "https://www.youtube.com/embed/";
+
+var audio = new Audio('buttonSound.mp3');
+
 
 searchButtonLink.onclick = f;
 submitButtonLink.onclick = update;
 deleteButton.onclick = deleteAllData;
+showAllButton.onclick = lever;
+
+
+var isPress = false;
+function lever() {
+	audio.play();
+	if (!isPress) {
+		showAllVideos();
+	}
+	else {
+		hideAllVideos();
+	}
+}
+
+function showAllVideos() {
+	playlist.style.visibility = 'visible';
+	let text = createPlaylist();
+	playlist.value = text;
+	let helper = specialWords.length * 2 + 'em';
+	showAllButton.disabled = true;
+	$('.playList').animate({ 'height': helper }, 1000, function () { showAllButton.disabled = false });
+	isPress = true;
+	showAllButton.innerHTML = 'hide';
+}
+
+function hideAllVideos() {
+	showAllButton.innerHTML = 'show';
+	showAllButton.disabled = true;
+	$('.playList').animate({ 'height': '1em' }, 1000, function () { playlist.style.visibility = 'hidden' , showAllButton.disabled = false });
+	isPress = false;
+}
+
+
 
 function deleteAllData() {
+	audio.play();
 	localStorage.clear();
 }
 
@@ -44,7 +83,7 @@ if (localStorage.getItem('sw') !== null) {
 	specialWords = JSON.parse(localStorage.getItem('sw'));
 	for (var n = 0; n < specialWords.length; n++) {
 		links[specialWords[n]] = localStorage.getItem(specialWords[n]);
-		
+		console.log(specialWords[n]);
 	}
 }	
 else {
@@ -52,6 +91,14 @@ else {
 	for (let n = 0; n < specialWords.length; n++) {
 		localStorage.setItem(specialWords[n], links[specialWords[n]]);
 	}
+}
+
+function createPlaylist() {
+	var textPlayList = '';
+	for (let i = 0; i < specialWords.length; i++) {
+		textPlayList += specialWords[i] + '\n';
+	}
+	return textPlayList;
 }
 
 
@@ -79,9 +126,8 @@ function transforomToYoutube(s) {
 }
 
 
-
-
 function update() {
+	audio.play();
 	inputName.value = inputName.value.toLowerCase();
 	if (inputLink.value.indexOf(".be/") !== -1) {
 		inputLink.value =  transforomToYoutube(inputLink.value);
@@ -107,7 +153,8 @@ function update() {
 
 
 
-function f() {	
+function f() {
+	audio.play();
 	var a = enter.value;
 	a = a.toLowerCase();
 	let index = lenghtOfLevenstein(a);
@@ -116,6 +163,7 @@ function f() {
 }
 
 	
+alert("js on");
 
 
 
@@ -135,6 +183,7 @@ function lenghtOfLevenstein(req) {
 		if (max < current) {
 			max = current;
 			index = i;
+			console.log(specialWords[index] + " = " + current);
 		}
 		current = 0;
 	}
