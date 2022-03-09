@@ -187,5 +187,5 @@ function lenghtOfLevenstein(req) {
 		}
 		current = 0;
 	}
-	return index;
+	return index; 
 }
