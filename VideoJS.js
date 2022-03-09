@@ -162,8 +162,7 @@ function f() {
 	titleOfVideo.innerHTML = specialWords[index];
 }
 
-	
-alert("js on");
+
 
 
 
